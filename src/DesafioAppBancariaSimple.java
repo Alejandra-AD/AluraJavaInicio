@@ -12,7 +12,7 @@ public class DesafioAppBancariaSimple {
         Scanner movimientoBancarioCliente = new Scanner(System.in);
 
         //ui
-        System.out.println("##################### BANCO ALURA ORACLE #########################");
+        System.out.println("##################### MAZE XLURX BANK #########################");
         System.out.println("Cliente = " + cliente);
         System.out.println("Tipo de cuenta = " + tipoCuenta);
         System.out.println("Saldo = " + "$" + saldo);
