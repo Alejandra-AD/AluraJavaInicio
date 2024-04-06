@@ -29,38 +29,31 @@ public class DesafioAppBancariaSimple {
 
 
             switch (opcionCliente) {
-                case 1:
-                    System.out.println("Su saldo actual es de " + "$" + saldo);
-                    break;
-
-                case 2:
+                case 1 -> System.out.println("Su saldo actual es de " + "$" + saldo);
+                case 2 -> {
                     System.out.println("¿Cuánto desea depositar?");
                     int cantidadDepositada = movimientoBancarioCliente.nextInt();
                     saldo = saldo + cantidadDepositada;
-                    break;
-
-                case 3:
+                }
+                case 3 -> {
                     boolean cantidadValida = false;
                     System.out.println("¿Cuánto desea retirar?");
-                    while (!cantidadValida){
+                    while (!cantidadValida) {
                         int cantidadRetirada = movimientoBancarioCliente.nextInt();
-                        if(cantidadRetirada > saldo){
-                            System.out.println("Excede el máximo\nSu saldo actual es de = " +"$"+ saldo);
+                        if (cantidadRetirada > saldo) {
+                            System.out.println("Excede el máximo\nSu saldo actual es de = " + "$" + saldo);
                             System.out.println("Ingrese otro valor");
-                        }else{
+                        } else {
                             saldo = saldo - cantidadRetirada;
                             cantidadValida = true;
                         }
                     }
-                    break;
-
-                case 4:
+                }
+                case 4 -> {
                     System.out.println("Cerrando Sesión...");
                     salir = true;
-                    break;
-
-                default:
-                    System.out.println("Opción no válida. Por favor, seleccione una opción válida.");
+                }
+                default -> System.out.println("Opción no válida. Por favor, seleccione una opción válida.");
             }
         }
     }
