@@ -50,7 +50,7 @@ public class DesafioAppBancariaSimple {
                     }
                 }
                 case 4 -> {
-                    System.out.println("Cerrando Sesión...");
+                    System.out.println("Cerrando sesión...");
                     salir = true;
                 }
                 default -> System.out.println("Opción no válida. Por favor, seleccione una opción válida.");
