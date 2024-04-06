@@ -41,8 +41,7 @@ public class DesafioAppBancariaSimple {
                     while (!cantidadValida) {
                         int cantidadRetirada = movimientoBancarioCliente.nextInt();
                         if (cantidadRetirada > saldo) {
-                            System.out.println("Excede el máximo\nSu saldo actual es de = " + "$" + saldo);
-                            System.out.println("Ingrese otro valor");
+                            System.out.println("Excede el máximo\nSu saldo actual es de = " + "$" + saldo +"\nIngrese otro valor\n");
                         } else {
                             saldo = saldo - cantidadRetirada;
                             cantidadValida = true;
@@ -55,6 +54,7 @@ public class DesafioAppBancariaSimple {
                 }
                 default -> System.out.println("Opción no válida. Por favor, seleccione una opción válida.");
             }
+
         }
     }
 }
